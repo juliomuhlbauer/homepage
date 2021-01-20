@@ -29,11 +29,16 @@ h2 {
   font-weight: 700;
 }
 h3 {
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 600;
 }
+p {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 2.2rem;
+}
 a {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 500;
 }
 img {
@@ -47,7 +52,7 @@ button {
   padding: 10px;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 500;
 }
 .btn-1 {
@@ -90,6 +95,7 @@ nav {
   display: flex;
   justify-content: flex-end;
 }
+
 @media (max-width: 960px) {
   nav {
     flex-flow: wrap;
@@ -119,23 +125,10 @@ main {
 section {
   margin: 10% 0;
 }
-section .title {
-  margin: 10% 0;
+section h1 {
+  margin: 0 0 10%;
 }
-/* Gallery */
-.gallery {
-  display: flex;
-  flex-flow: wrap;
-  justify-content: center;
-  gap: 24px;
-}
-.item-gallery {
-  width: 150px;
-  height: 140px;
-  background-color: var(--main-color);
-  border-radius: 6px;
-  padding: 12px;
-}
+
 /* Container */
 .container {
   display: flex;
@@ -143,6 +136,23 @@ section .title {
 }
 .container div {
   width: 100%;
+}
+
+/* Gallery */
+.gallery {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+.gallery div {
+  width: 150px;
+  height: 140px;
+  background-color: var(--main-color);
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 20px;
+  font-weight: 500;
 }
 /* Video Player */
 .plyr {
