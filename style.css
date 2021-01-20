@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+/* border: 5px solid red; */
+:root {
+  --main-color: #242424;
+  --bg-color: #1b1b1b;
+  --accent-color: white;
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  color: var(--accent-color);
+}
+body {
+  background-color: var(--bg-color);
+}
+
+/* Items */
+h1 {
+  font-size: 42px;
+  font-weight: 700;
+}
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+}
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+a {
+  font-size: 16px;
+  font-weight: 500;
+}
+img {
+  width: inherit;
+  height: inherit;
+}
+button {
+  color: var(--main-color);
+  background-color: var(--accent-color);
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+}
+.btn-1 {
+  color: var(--main-color);
+  background-color: var(--accent-color);
+}
+.btn-2 {
+  color: var(--accent-color);
+  background-color: transparent;
+  border: 3px solid white;
+}
+
+/* Navbar */
+nav {
+  max-width: 1080px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  gap: 16px;
+}
+.nav-brand {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+.nav-brand img {
+  max-height: 100px;
+}
+.nav-items {
+  flex: 2;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 16px 48px;
+}
+.nav-buttons {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 960px) {
+  nav {
+    flex-flow: wrap;
+    padding: 0 24px 24px;
+  }
+  .nav-items {
+    order: 2;
+    flex-basis: 100%;
+    flex-flow: wrap;
+    justify-content: flex-start;
+  }
+  .nav-buttons {
+    order: 1;
+  }
+  .container {
+    flex-flow: wrap;
+  }
+  .top {
+    order: -1;
+  }
+}
+main {
+  max-width: 1080px;
+  margin: auto;
+  padding: 0 24px;
+}
+section {
+  margin: 10% 0;
+}
+section .title {
+  margin: 10% 0;
+}
+/* Gallery */
+.gallery {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+.item-gallery {
+  width: 150px;
+  height: 140px;
+  background-color: var(--main-color);
+  border-radius: 6px;
+  padding: 12px;
+}
+/* Container */
+.container {
+  display: flex;
+  gap: 50px;
+}
+.container div {
+  width: 100%;
+}
+/* Video Player */
+.plyr {
+  border-radius: 10px;
+  --plyr-color-main: var(--main-color);
+}
