@@ -1,7 +1,8 @@
-$(window).scroll(function () {
-  if ($(window).scrollTop() > 10) {
-    $("#navBar").addClass("floatingNav");
+window.addEventListener("scroll", (e) => {
+  const nav = document.querySelector("header");
+  if (window.pageYOffset > 0) {
+    nav.classList.add("nav-shadow");
   } else {
-    $("#navBar").removeClass("floatingNav");
+    nav.classList.remove("nav-shadow");
   }
 });

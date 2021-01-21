@@ -75,6 +75,9 @@ nav {
   padding: 0 24px;
   gap: 16px;
 }
+.nav-shadow {
+  box-shadow: 0 8px 6px -6px var(--main-color);
+}
 .nav-brand {
   flex: 1;
   display: flex;
