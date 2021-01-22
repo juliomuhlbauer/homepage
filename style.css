@@ -66,6 +66,11 @@ button {
 }
 
 /* Navbar */
+header {
+  position: sticky;
+  top: 0;
+  background-color: var(--bg-color);
+}
 nav {
   max-width: 1080px;
   margin: auto;
