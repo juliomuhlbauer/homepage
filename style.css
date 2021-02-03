@@ -4,17 +4,19 @@
   --main-color: #242424;
   --bg-color: #1b1b1b;
   --accent-color: white;
+  --contrast-color: #111111;
   scroll-behavior: smooth;
 }
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
-  font-size: 1.2rem;
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   color: var(--accent-color);
+}
+html {
+  font-size: 62.5%;
 }
 body {
   background-color: var(--bg-color);
@@ -22,49 +24,50 @@ body {
 
 /* Items */
 h1 {
-  font-size: 42px;
-  font-weight: 700;
-  line-height: 5.2rem;
+  font-weight: 600;
+  font-size: 4.2rem;
+  line-height: 2em;
 }
 h2 {
-  font-size: 36px;
-  font-weight: 700;
+  font-weight: 600;
+  font-size: 3.6rem;
+  line-height: 2em;
 }
 h3 {
-  font-size: 26px;
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 2.6rem;
+  line-height: 2em;
 }
 p {
-  font-size: 22px;
+  font-size: 2rem;
   font-weight: 500;
-  line-height: 2.2rem;
+  line-height: 2em;
 }
 a {
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 500;
+  line-height: 2em;
 }
 img {
   width: inherit;
   height: inherit;
 }
-button {
-  color: var(--main-color);
-  background-color: var(--accent-color);
-  border: none;
-  padding: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 20px;
-  font-weight: 500;
-}
+button,
 .btn-1 {
+  background: none;
   color: var(--main-color);
   background-color: var(--accent-color);
+  border: 0.2rem solid var(--accent-color);
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 500;
 }
 .btn-2 {
   color: var(--accent-color);
-  background-color: transparent;
-  border: 3px solid white;
+  background-color: var(--bg-color);
+  border-color: var(--accent-color);
 }
 
 /* Navbar */
@@ -79,16 +82,19 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px;
-  gap: 16px;
+  padding: 0 24px;
+  gap: 1.6rem;
 }
 .nav-shadow {
-  box-shadow: 0 8px 6px -6px var(--main-color);
+  box-shadow: 0 8px 6px -6px var(--contrast-color);
 }
 .nav-brand {
   flex: 1;
   display: flex;
   justify-content: flex-start;
+}
+.nav-brand h1 {
+  padding: 24px 0;
 }
 .nav-brand img {
   max-height: 100px;
@@ -118,7 +124,11 @@ main {
 
 section > h1,
 section > h2 {
-  margin: 0 0 10%;
+  margin-bottom: 10%;
+}
+
+.container h1 {
+  margin-bottom: 5%;
 }
 
 /* Container */
